@@ -72,6 +72,10 @@ namespace TenancyManagement
                 routes.MapRoute(
                  name: "Areas",
                  template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+                //routes.MapRoute(
+                //   name: "",
+                //   template: "{controller=House/{action=Index}");
             });
         }
     }
