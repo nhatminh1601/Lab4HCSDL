@@ -13,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using TenancyManagement.Implementations;
 using TenancyManagement.Interfaces;
 using TenancyManagement.Models;
+using Microsoft.AspNetCore.Session;
 
 namespace TenancyManagement
 {
@@ -39,6 +40,8 @@ namespace TenancyManagement
                    Configuration.GetSection("DefaultConnection")["ConnectionString"]));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddDistributedMemoryCache();
+            services.AddSession();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
         }
 
@@ -59,7 +62,7 @@ namespace TenancyManagement
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
+            app.UseSession();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
