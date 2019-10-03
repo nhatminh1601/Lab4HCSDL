@@ -12,5 +12,10 @@ namespace TenancyManagement.Controllers
         {
             return View();
         }
+
+        public IActionResult GetHouseList()
+        {
+            return PartialView();
+        }
     }
 }
