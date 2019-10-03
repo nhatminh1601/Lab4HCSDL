@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,7 +11,7 @@ using TenancyManagement.Models;
 namespace TenancyManagement.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class NhanViensController : Controller
+    public class NhanViensController : BaseController
     {
         private readonly DatabaseContext _context;
 

@@ -41,3 +41,4 @@ D:\LabHCSDL\Lab4HCSDL\TenancyManagement\obj\Debug\netcoreapp2.2\Razor\Areas\Admi
 D:\LabHCSDL\Lab4HCSDL\TenancyManagement\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\NhanViens\Index.g.cshtml.cs
 D:\LabHCSDL\Lab4HCSDL\TenancyManagement\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Shared\_MenuAdmin.g.cshtml.cs
 D:\LabHCSDL\Lab4HCSDL\TenancyManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutMaster.g.cshtml.cs
+D:\LabHCSDL\Lab4HCSDL\TenancyManagement\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Login\Index.g.cshtml.cs
